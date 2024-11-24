@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on TecDoc</title>
+    <link>http://localhost:1313/tecdoc/tags/</link>
+    <description>Recent content in Tags on TecDoc</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>arne.ziegler@gmx.net (Arne)</managingEditor>
+    <webMaster>arne.ziegler@gmx.net (Arne)</webMaster>
+    <lastBuildDate>Mon, 20 Mar 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tecdoc/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Example</title>
+      <link>http://localhost:1313/tecdoc/tags/example/</link>
+      <pubDate>Mon, 20 Mar 2017 00:00:00 +0000</pubDate><author>arne.ziegler@gmx.net (Arne)</author>
+      <guid>http://localhost:1313/tecdoc/tags/example/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Photoswipe</title>
+      <link>http://localhost:1313/tecdoc/tags/photoswipe/</link>
+      <pubDate>Mon, 20 Mar 2017 00:00:00 +0000</pubDate><author>arne.ziegler@gmx.net (Arne)</author>
+      <guid>http://localhost:1313/tecdoc/tags/photoswipe/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
