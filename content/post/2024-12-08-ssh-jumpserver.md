@@ -11,6 +11,11 @@ Here is a simple flow chart:
   info
 ```
 
+```mermaid
+flowchart TD
+     A-->B
+```
+
 The result is a diagram which is correctly rendered like this:
 
 <pre class="mermaid">
