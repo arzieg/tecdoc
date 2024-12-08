@@ -5,22 +5,17 @@ date: 2024-12-08
 tags: ["ssh", "ssh-jump"]
 ---
 
-Here is a simple flow chart:
 
-<div class="result" markdown>
 
-``` mermaid
-graph LR
-  A[Start] --> B{Error?};
-  B -->|Yes| C[Hmm...];
-  C --> D[Debug];
-  D --> B;
-  B ---->|No| E[Yay!];
+### Simple Left-Right Graph
+```mermaid
+graph LR;
+A-->B;
+A-->C;
+B-->D;
+C-->D;
 ```
 
-</div>
-
-  [Flowcharts]: https://mermaid.js.org/syntax/flowchart.html
 
 The result is a diagram which is correctly rendered like this:
 
