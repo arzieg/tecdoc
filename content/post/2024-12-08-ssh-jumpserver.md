@@ -7,14 +7,20 @@ tags: ["ssh", "ssh-jump"]
 
 Here is a simple flow chart:
 
-```mermaid
-  info
+<div class="result" markdown>
+
+``` mermaid
+graph LR
+  A[Start] --> B{Error?};
+  B -->|Yes| C[Hmm...];
+  C --> D[Debug];
+  D --> B;
+  B ---->|No| E[Yay!];
 ```
 
-```mermaid
-flowchart TD
-     A-->B
-```
+</div>
+
+  [Flowcharts]: https://mermaid.js.org/syntax/flowchart.html
 
 The result is a diagram which is correctly rendered like this:
 
