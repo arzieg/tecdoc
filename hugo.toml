@@ -66,6 +66,17 @@ pygmentsCodefencesGuessSyntax = true
     weight = 100
 
 [[menu.main]]
+    name = "Podman"
+    weight = 110
+
+[[menu.main]]
+    parent = "Podman"
+    name = "Install Podman from Source"
+    url = "post/2024-12-10-podman-install-latest-mint"
+    weight = 1
+
+
+[[menu.main]]
     name = "About"
     url = "page/about/"
     weight = 900
