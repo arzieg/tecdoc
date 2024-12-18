@@ -54,6 +54,29 @@ Damit kann der local Forwardprozess auch in den Hintergrund der aktiven Terminal
 Ein Webservice wird auf dem Client dann über die Browser-URL http(s)//localhost:\<port-client\> aufgerufen.
 
 
+# Local Portforwarding von Pods in einem Kubernetescluster
+
+In diesem Beispiel läuft in einem Kubernetescluster eine Anwendung, die diese auf Port 8200 bereitstellt. Die Verbindung ist wie folgt
+
+Client (C) -> Jumpserver (J) -> Kubernetes - Adminserver (K) -> Hashicorp Vault Service
+
+Auf dem Server K wird der Port 8200 geforwarded. 
+
+```
+kubectl get svc -A 
+kubectl port-forward -n vault service/vault 8200:8200 
+```
+
+Der Port wird dann via ssh Jumpserver auf den Client geforwarded: 
+
+```
+ssh -L 8200:localhost:8200 -J <user>@<jumphost> <user>@<kubernets adminserver>
+```
+
+Via lokalem Browser dann https://localhost:8200 die Anwendung aufrufen. 
+
+
+
 
 
 
